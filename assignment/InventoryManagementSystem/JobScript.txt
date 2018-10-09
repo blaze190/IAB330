@@ -1,0 +1,5 @@
+﻿Goto Location 1
+Pick Item 003 x 19
+Goto Location 2
+Pick Item 045 x 57
+Goto PackStation 2
