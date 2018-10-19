@@ -13,8 +13,8 @@
 namespace LogisticsManager {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\emily\\source\\repos\\LogisticsManager\\LogisticsManager\\LogisticsManager\\Ta" +
-        "sks.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Emily\\Documents\\IAB330\\LogisticsManager\\LogisticsManager\\LogisticsManager\\Task" +
+        "s.xaml")]
     public partial class Tasks : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

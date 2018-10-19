@@ -10,12 +10,24 @@
         <Button Text="Tasks" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                Clicked="Button_Clicked"></Button>
+                Clicked="Tasks_Button_Clicked"/>
 
         <Button Text="Request" 
                 HorizontalOptions="Center" 
-                VerticalOptions="Center">
-        </Button>
+                VerticalOptions="Center"
+                Clicked="Request_Button_Clicked"/>
+
+        <Button Text="Report" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="Report_Button_Clicked"/>
+
+
+        <Button Text="Login" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="Login_Button_Clicked"/>
+
 
 
 

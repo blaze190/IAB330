@@ -1,21 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SQLite;
+using System.ComponentModel;
 
 namespace LogisticsManager
 {
-    class Task
+    public class Task : INotifyPropertyChanged
     {
 
-        private string name;
-        private List<string> script;
+        private int _id;
+        [PrimaryKey, AutoIncrement]
+        public int Id {
+            get {
+                return _id;
+            }
+            set {
+                this._id = value;
+                OnPropertyChanged(nameof(Id));
+            }
+        }
 
-        public Task(string name, List<string> script) {
-            this.name = name;
-            this.script = script;
+        private string _name;
+        [NotNull]
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                this._name = value;
+                OnPropertyChanged(nameof(Name));
+            }
+        }
 
-            Console.WriteLine("New Task Created: " + name);
+        private string _desc;
+        [NotNull]
+        public string Desc
+        {
+            get
+            {
+                return _desc;
+            }
+            set
+            {
+                this._desc = value;
+                OnPropertyChanged(nameof(Desc));
+            }
+        }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string propertyName)
+        {
+            this.PropertyChanged?.Invoke(this,
+              new PropertyChangedEventArgs(propertyName));
         }
 
     }

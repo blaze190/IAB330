@@ -285,6 +285,79 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "dependencies": {
@@ -766,6 +839,68 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "Xamarin.Forms/3.1.0.697729": {
@@ -1252,6 +1387,68 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "dependencies": {
@@ -1558,6 +1755,65 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "Xamarin.Forms/3.1.0.697729": {
@@ -2041,6 +2297,68 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x64/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "Xamarin.Forms/3.1.0.697729": {
@@ -2527,6 +2845,68 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x64/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "dependencies": {
@@ -3008,6 +3388,68 @@
         },
         "native": {
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x86/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "Xamarin.Forms/3.1.0.697729": {
@@ -3492,6 +3934,68 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x86/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "Xamarin.Forms/3.1.0.697729": {
@@ -7182,6 +7686,117 @@
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
+    "sqlite-net-pcl/1.5.231": {
+      "sha512": "Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
+      "type": "package",
+      "path": "sqlite-net-pcl/1.5.231",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLite-net.deps.json",
+        "lib/netstandard1.1/SQLite-net.dll",
+        "lib/netstandard1.1/SQLite-net.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.xml",
+        "sqlite-net-pcl.1.5.231.nupkg.sha512",
+        "sqlite-net-pcl.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.bundle_green/1.1.11": {
+      "sha512": "HOD1/Jg9VZtrOyPUCD9reQOXHq4r+fNe24qw5nghuiUcKch+9jePeRpt6MqGGUFhg2KW89KvE/RFlhpbfF8pKA==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_green/1.1.11",
+      "files": [
+        ".signature.p7s",
+        "build/wp8/SQLitePCLRaw.bundle_green.targets",
+        "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net35/SQLitePCLRaw.batteries_green.dll",
+        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net40/SQLitePCLRaw.batteries_green.dll",
+        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net45/SQLitePCLRaw.batteries_green.dll",
+        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_green.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win8/SQLitePCLRaw.batteries_green.dll",
+        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win81/SQLitePCLRaw.batteries_green.dll",
+        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
+        "lib/wp8/_._",
+        "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
+        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
+        "sqlitepclraw.bundle_green.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/1.1.11": {
+      "sha512": "bWiOso10I1vDuc5rbzT69LQT0+oXfYnoqx8vKJ8zim/CJ4ytSd20QNTE/FE0dvWEgXGnvDp7gGJFu6PeWnhx9g==",
+      "type": "package",
+      "path": "sqlitepclraw.core/1.1.11",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/net35/SQLitePCLRaw.core.dll",
+        "lib/net40/SQLitePCLRaw.core.dll",
+        "lib/net45/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.0/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.core.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/uap10.0/SQLitePCLRaw.core.dll",
+        "lib/win8/SQLitePCLRaw.core.dll",
+        "lib/win81/SQLitePCLRaw.core.dll",
+        "lib/wpa81/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.1.1.11.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.11": {
+      "sha512": "yTpfTzpMxY2EIf8uGqzsiBanjKl9aMhWvpFEUMBZqCjGBpGePEWlOWNYBcwBJ1vf79lqAYEgNjjWdOSU1bgStA==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3.v140/1.1.11",
+      "files": [
+        ".signature.p7s",
+        "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets",
+        "runtimes/win10-arm/native/e_sqlite3.dll",
+        "runtimes/win10-x64/native/e_sqlite3.dll",
+        "runtimes/win10-x86/native/e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.v140.1.1.11.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.v140.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.11": {
+      "sha512": "OooTLavmMXE6vLSD7KJ1AAUMLkkfTQVQSkaSrZnlWhOtXBDrWmu3vNYDxyjrynoz+cJp6FIEiziQNU0/xLNY4g==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3.uwp10/1.1.11",
+      "files": [
+        ".signature.p7s",
+        "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.uwp10.1.1.11.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.uwp10.nuspec"
+      ]
+    },
     "Xamarin.Forms/3.1.0.697729": {
       "sha512": "oYfHpCY9i9wN4vLllsIhzDZY5iOCUtZ3RHxID1fiXOcf7yL9UA16NUsI8opoNmpv1Ru2lTGG9ZKKT1sYS6DLjA==",
       "type": "package",
@@ -7335,7 +7950,8 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.1.5",
-      "Xamarin.Forms >= 3.1.0.697729"
+      "Xamarin.Forms >= 3.1.0.697729",
+      "sqlite-net-pcl >= 1.5.231"
     ]
   },
   "packageFolders": {
@@ -7345,11 +7961,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emily\\source\\repos\\LogisticsManager\\LogisticsManager\\LogisticsManager.UWP\\LogisticsManager.UWP.csproj",
+      "projectUniqueName": "D:\\Emily\\Documents\\IAB330\\LogisticsManager\\LogisticsManager\\LogisticsManager.UWP\\LogisticsManager.UWP.csproj",
       "projectName": "LogisticsManager.UWP",
-      "projectPath": "C:\\Users\\emily\\source\\repos\\LogisticsManager\\LogisticsManager\\LogisticsManager.UWP\\LogisticsManager.UWP.csproj",
+      "projectPath": "D:\\Emily\\Documents\\IAB330\\LogisticsManager\\LogisticsManager\\LogisticsManager.UWP\\LogisticsManager.UWP.csproj",
       "packagesPath": "C:\\Users\\emily\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emily\\source\\repos\\LogisticsManager\\LogisticsManager\\LogisticsManager.UWP\\obj\\",
+      "outputPath": "D:\\Emily\\Documents\\IAB330\\LogisticsManager\\LogisticsManager\\LogisticsManager.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -7382,6 +7998,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.1.0.697729, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.5.231, )"
           }
         },
         "imports": [

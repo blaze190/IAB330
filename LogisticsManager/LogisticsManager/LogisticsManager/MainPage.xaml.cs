@@ -15,9 +15,24 @@ namespace LogisticsManager
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Tasks_Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Tasks());
+            Navigation.PushAsync(new Views.Tasks());
+        }
+
+        private void Login_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Views.LogIn());
+        }
+
+        private void Report_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Views.Report());
+        }
+
+        private void Request_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Views.Request());
         }
     }
 }

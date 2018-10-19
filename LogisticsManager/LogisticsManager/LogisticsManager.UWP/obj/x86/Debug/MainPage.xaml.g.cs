@@ -13,8 +13,8 @@
 namespace LogisticsManager {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\emily\\source\\repos\\LogisticsManager\\LogisticsManager\\LogisticsManager\\Ma" +
-        "inPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Emily\\Documents\\IAB330\\LogisticsManager\\LogisticsManager\\LogisticsManager\\Main" +
+        "Page.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

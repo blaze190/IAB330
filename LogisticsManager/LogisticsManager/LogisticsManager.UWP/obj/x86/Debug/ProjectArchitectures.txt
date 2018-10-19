@@ -1,1 +1,1 @@
-C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\LogisticsManager.UWP.csproj;x86
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\LogisticsManager.UWP.csproj;x86

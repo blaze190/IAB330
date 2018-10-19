@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=edbb5f83-ac2b-4583-8a31-2051f6bab47f</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\LogisticsManager.UWP.exe">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\LogisticsManager.UWP.exe">
       <PackagePath>entrypoint\LogisticsManager.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
@@ -520,6 +520,24 @@
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\sqlite-net-pcl\1.5.231\lib\netstandard1.1\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\sqlitepclraw.bundle_green\1.1.11\lib\uap10.0\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\sqlitepclraw.bundle_green\1.1.11\lib\uap10.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\sqlitepclraw.core\1.1.11\lib\uap10.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v140\1.1.11\runtimes\win10-x86\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\sqlitepclraw.provider.e_sqlite3.uwp10\1.1.11\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
     </AppxPackagedFile>
@@ -532,124 +550,124 @@
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\LogisticsManager.UWP.xr.xml">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\LogisticsManager.UWP.xr.xml">
       <PackagePath>LogisticsManager.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
@@ -691,11 +709,11 @@
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\source\repos\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\Core\LogisticsManager.UWP.exe">
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\Core\LogisticsManager.UWP.exe">
       <PackagePath>LogisticsManager.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

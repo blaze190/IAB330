@@ -8,14 +8,10 @@ namespace LogisticsManager
 {
     public partial class App : Application
     {
+
         public App()
         {
             InitializeComponent();
-
-            List<string> script = new List<string>();
-            script.Add("Empty bins");
-            script.Add("Dump in large skip outside the front gate");
-            Task takeOutTrash = new Task("Take Out Trash", script);
 
             MainPage = new NavigationPage(new MainPage());
         }
@@ -34,5 +30,6 @@ namespace LogisticsManager
         {
             // Handle when your app resumes
         }
+
     }
 }
