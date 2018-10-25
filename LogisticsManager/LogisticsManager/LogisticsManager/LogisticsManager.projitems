@@ -16,6 +16,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Clock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClocksDBController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CompaniesDBController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
@@ -32,6 +34,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)UsersDBController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\NewsFeed.xaml.cs">
       <DependentUpon>NewsFeed.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NewTask.xaml.cs">
+      <DependentUpon>NewTask.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Register.xaml.cs">
@@ -98,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NewsFeed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NewTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

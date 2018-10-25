@@ -28,25 +28,30 @@ namespace LogisticsManager.Views
 
             foreach (LogisticsManager.Report report in reportsDBController.GetOrderedReports()) {
 
-                string FromUser = usersDBController.GetUserByID(report.FromUserID).FirstOrDefault().Username;
+                if (report.CompanyID == Constants.company.Id)
+                {
 
-                Label labelDateTimeUser = new Label();
-                Label labelType = new Label();
-                Label labelDesc = new Label();
+                    string FromUser = usersDBController.GetUserByID(report.FromUserID).FirstOrDefault().Username;
 
-                labelType.FontSize = 15;
-                labelDesc.FontSize = 10;
-                labelDateTimeUser.FontSize = 8;
+                    Label labelDateTimeUser = new Label();
+                    Label labelType = new Label();
+                    Label labelDesc = new Label();
 
-                labelDesc.Margin = new Thickness (0, 0, 0, 10);
+                    labelType.FontSize = 15;
+                    labelDesc.FontSize = 10;
+                    labelDateTimeUser.FontSize = 8;
 
-                labelType.Text = report.Type;
-                labelDesc.Text = report.Desc;
-                labelDateTimeUser.Text =  FromUser + " " + report.CreationDate.ToString();
+                    labelDesc.Margin = new Thickness(0, 0, 0, 10);
 
-                NewsFeedStack.Children.Add(labelDateTimeUser);
-                NewsFeedStack.Children.Add(labelType);
-                NewsFeedStack.Children.Add(labelDesc);
+                    labelType.Text = report.Type;
+                    labelDesc.Text = report.Desc;
+                    labelDateTimeUser.Text = FromUser + " " + report.CreationDate.ToString();
+
+                    NewsFeedStack.Children.Add(labelDateTimeUser);
+                    NewsFeedStack.Children.Add(labelType);
+                    NewsFeedStack.Children.Add(labelDesc);
+
+                }
             }
             
         }

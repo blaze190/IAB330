@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LogisticsManager.Views.NewTask"
+             Title="New Task">
+    <ContentPage.Content>
+        <StackLayout x:Name="NewTaskStack" Padding="40,40,40,0" VerticalOptions="StartAndExpand">
+            <Label x:Name="labelAssignment" Text="Assign The Task To"/>
+            <Picker x:Name="pickerAssignment" Title="Select an Access Level"/>
+            <Label x:Name="labelName" Text="Task Name"/>
+            <Entry x:Name="entryName" Placeholder="Name"/>
+            <Label x:Name="labelDescription" Text="Task Description"/>
+            <Entry x:Name="entryDescription" Placeholder="Description"/>
+            <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

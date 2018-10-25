@@ -13,6 +13,7 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.And
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\Register.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\RegisterUser.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\NewsFeed.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\NewTask.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\LogisticsManager.Android.csproj.CoreCompileInputs.cache
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\XamlC.stamp
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\LogisticsManager.Android.dll

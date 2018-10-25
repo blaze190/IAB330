@@ -18,46 +18,57 @@ namespace LogisticsManager.Views
 			InitializeComponent();
             this.tasksDBController = new TasksDBController();
 
+            generateList();
+
         }
 
-        protected override void OnAppearing()
+        void OnAdd(object sender, EventArgs e)
         {
-            base.OnAppearing();
-            this.BindingContext = this.tasksDBController;
+            Navigation.PushAsync(new Views.NewTask());
         }
 
-        private void OnSaveClick(object sender, EventArgs e)
+        void OnDeleteAll(object sender, EventArgs e)
         {
-            this.tasksDBController.SaveAllTasks();
+            tasksDBController.DeleteAllTasks();
+            DisplayAlert("Success","All tasks have been removed","OK");
+            Navigation.PushAsync(new MainPage());
         }
 
-        private void OnAddClick(object sender, EventArgs e)
-        {
-            this.tasksDBController.AddNewTask();
-        }
+        private void generateList() {
 
-        private void OnRemoveClick(object sender, EventArgs e)
-        {
-            var currentTask =
-              this.TasksView.SelectedItem as Task;
-            if (currentTask != null)
+            foreach (Task task in tasksDBController.GetAllTasks())
             {
-                this.tasksDBController.DeleteTask(currentTask);
-            }
-        }
+                if (task.CompanyID == Constants.company.Id) {
 
-        private async void OnRemoveAllClick(object sender, EventArgs e)
-        {
-            if (this.tasksDBController.Tasks.Any())
-            {
-                var result =
-                  await DisplayAlert("Confirmation",
-                  "Are you sure? This cannot be undone",
-                  "OK", "Cancel");
-                if (result == true)
-                {
-                    this.tasksDBController.DeleteAllTasks();
-                    this.BindingContext = this.tasksDBController;
+                    if (task.AccessLevel == Constants.user.AccessLevel)
+                    {
+
+                        Label labelName = new Label();
+                        Label labelDesc = new Label();
+                        Button buttonCompleted = new Button();
+
+                        labelName.FontSize = 15;
+                        labelDesc.FontSize = 10;
+                        buttonCompleted.FontSize = 13;
+
+                        buttonCompleted.Margin = new Thickness(0, 0, 0, 10);
+
+                        labelName.Text = task.Name;
+                        labelDesc.Text = task.Desc;
+                        buttonCompleted.Text = "Complete";
+
+                        buttonCompleted.Clicked += HandleClick;
+
+                        void HandleClick(object sender, EventArgs e) {
+                            tasksDBController.DeleteTask(task);
+                            Navigation.PushAsync(new MainPage());
+                        }
+
+                        TasksStack.Children.Add(labelName);
+                        TasksStack.Children.Add(labelDesc);
+                        TasksStack.Children.Add(buttonCompleted);
+
+                    }
                 }
             }
         }

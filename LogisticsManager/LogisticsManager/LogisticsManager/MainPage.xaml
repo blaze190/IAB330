@@ -3,27 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LogisticsManager"
              x:Class="LogisticsManager.MainPage"
-             Title="Logistics Manager"
+             Title="Managise"
              NavigationPage.HasBackButton="False">
 
-    <StackLayout Padding="40,40,40,0" VerticalOptions="StartAndExpand">
+    <StackLayout Padding="40,0,40,0" VerticalOptions="StartAndExpand">
 
         <Label Text=""
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                x:Name="labelName"/>
+                x:Name="labelClock"/>
+
+        <Button Text="Clock In" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="ClockIn_Button_Clicked"
+                x:Name="buttonClockIn" />
 
         <Button Text="Tasks" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="Tasks_Button_Clicked"
-                x:Name="buttonTasks"/>
+                x:Name="buttonTasks" />
 
         <Button Text="Request" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="Request_Button_Clicked"
-                x:Name="buttonRequest"/>
+                x:Name="buttonRequest" />
 
         <Button Text="Report" 
                 HorizontalOptions="Center" 
@@ -41,19 +47,25 @@
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="Login_Button_Clicked"
-                x:Name="buttonLogin"/>
+                x:Name="buttonLogin" />
 
         <Button Text="Register" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="Register_Button_Clicked"
-                x:Name="buttonRegister"/>
+                x:Name="buttonRegister" />
 
         <Button Text="Register Accounts" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="RegisterUser_Button_Clicked"
                 x:Name="buttonRegisterUser"/>
+
+        <Button Text="Clock Out" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="ClockOut_Button_Clicked"
+                x:Name="buttonClockOut" />
 
         <Button Text="Logout" 
                 HorizontalOptions="Center" 

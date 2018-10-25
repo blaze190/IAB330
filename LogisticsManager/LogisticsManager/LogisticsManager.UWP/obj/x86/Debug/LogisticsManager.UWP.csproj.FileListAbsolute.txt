@@ -611,3 +611,4 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\Register.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\RegisterUser.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\NewsFeed.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\NewTask.xaml.g.cs

@@ -20,6 +20,10 @@ namespace LogisticsManager.Views
             this.usersDBController = new UsersDBController();
             this.companiesDBController = new CompaniesDBController();
 
+            pickerAccessLevel.Items.Add("Staff");
+            pickerAccessLevel.Items.Add("Manager");
+            pickerAccessLevel.Items.Add("Admin");
+
             entryPassword.IsPassword = true;
         }
 
@@ -33,9 +37,27 @@ namespace LogisticsManager.Views
             User user = new User();
             user.Username = entryUsername.Text;
             user.Password = entryPassword.Text;
-            if( Int32.TryParse(entryAccessLevel.Text, out int i) ) {
-                user.AccessLevel = i;
+
+            string pickerValue = pickerAccessLevel.Items[pickerAccessLevel.SelectedIndex];
+            int pickerInt;
+
+            if (pickerValue == "Staff")
+            {
+                pickerInt = 1;
             }
+            else if (pickerValue == "Manager")
+            {
+                pickerInt = 2;
+            }
+            else if (pickerValue == "Admin")
+            {
+                pickerInt = 10;
+            }
+            else {
+                pickerInt = 0;
+            }
+            
+            user.AccessLevel = pickerInt;
            
             user.CompanyID = Constants.company.Id;
             usersDBController.SaveUser(user);

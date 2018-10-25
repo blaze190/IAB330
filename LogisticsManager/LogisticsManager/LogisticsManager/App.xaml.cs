@@ -13,7 +13,10 @@ namespace LogisticsManager
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromRgb(0, 192, 182) //Blue
+            };
         }
 
         protected override void OnStart()

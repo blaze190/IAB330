@@ -41,12 +41,13 @@ namespace LogisticsManager
               });
         }
 
-        public IEnumerable<Task> GetFilteredTasks()
+        public IEnumerable<Task> GetAllTasks()
         {
             lock (locker)
             {
-                return database.Query<Task>(
-                  "SELECT * FROM Tasks WHERE Name = 'Do Thing'").AsEnumerable();
+                var query = from task in database.Table<Task>()
+                            select task;
+                return query.AsEnumerable();
             }
         }
 

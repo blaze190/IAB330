@@ -124,3 +124,4 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\RegisterUser.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\LogisticsManager.iOS.csprojAssemblyReference.cache
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\NewsFeed.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\NewTask.xaml.g.cs

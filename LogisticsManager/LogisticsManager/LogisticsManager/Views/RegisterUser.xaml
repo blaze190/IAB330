@@ -9,7 +9,7 @@
             <Label x:Name="labelPassword" Text="Password"/>
             <Entry x:Name="entryPassword" Placeholder="Password"/>
             <Label x:Name="labelAccessLevel" Text="Access Level"/>
-            <Entry x:Name="entryAccessLevel" Placeholder="Access Level"/>
+            <Picker x:Name="pickerAccessLevel" Title="Select an Access Level"/>
             <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
         </StackLayout>
     </ContentPage.Content>

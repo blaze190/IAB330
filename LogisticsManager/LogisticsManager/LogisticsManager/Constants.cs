@@ -8,5 +8,6 @@ namespace LogisticsManager
     {
         public static User user = null;
         public static Company company = null;
+        public static Clock clock = null;
     }
 }
