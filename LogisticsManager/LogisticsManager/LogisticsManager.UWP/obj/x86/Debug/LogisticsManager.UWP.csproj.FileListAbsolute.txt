@@ -608,3 +608,4 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\Tasks.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\Report.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\Request.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Register.xaml.g.cs

@@ -3,30 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LogisticsManager"
              x:Class="LogisticsManager.MainPage"
-             Title="Logistics Manager">
+             Title="Logistics Manager"
+             NavigationPage.HasBackButton="False">
 
-    <StackLayout>
+    <StackLayout Padding="40,40,40,0" VerticalOptions="StartAndExpand">
 
         <Button Text="Tasks" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                Clicked="Tasks_Button_Clicked"/>
+                Clicked="Tasks_Button_Clicked"
+                x:Name="buttonTasks"/>
 
         <Button Text="Request" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                Clicked="Request_Button_Clicked"/>
+                Clicked="Request_Button_Clicked"
+                x:Name="buttonRequest"/>
 
         <Button Text="Report" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                Clicked="Report_Button_Clicked"/>
-
+                Clicked="Report_Button_Clicked"
+                x:Name="buttonReport"/>
 
         <Button Text="Login" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                Clicked="Login_Button_Clicked"/>
+                Clicked="Login_Button_Clicked"
+                x:Name="buttonLogin"/>
+
+        <Button Text="Logout" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="Logout_Button_Clicked"
+                x:Name="buttonLogout"/>
+
+        <Button Text="Register" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="Register_Button_Clicked"
+                x:Name="buttonRegister"/>
 
 
 

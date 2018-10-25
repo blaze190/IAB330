@@ -12,13 +12,52 @@ namespace LogisticsManager.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Request : ContentPage
 	{
-		public Request ()
+        private EquipmentDBController equipmentDBController;
+        public Request ()
 		{
 			InitializeComponent ();
+            this.equipmentDBController = new EquipmentDBController();
 
-            pickerEquipment.Items.Add("Ladder");
-            pickerEquipment.Items.Add("Vacuum");
-            pickerEquipment.Items.Add("Other");
+            
+
+            populatePicker();
         }
-	}
+
+        private void populatePicker() {
+            //populate the dropdown
+            foreach (Equipment equip in equipmentDBController.GetAllEquipment()){
+                string msg;
+                if (equip.UserID == 0)
+                {
+                    msg = " (available)";
+                }
+                else {
+                    msg = " (in use)";
+                }
+                pickerEquipment.Items.Add(equip.Name + msg);
+            }
+        }
+
+        void buttonSubmitClicked(object sender, EventArgs e)
+        {
+            string pickerValue = pickerEquipment.Items[pickerEquipment.SelectedIndex];
+
+            if (pickerValue.Contains("available")) {
+                pickerValue = pickerValue.Replace(" (available)", "");
+            } else if (pickerValue.Contains("in use"))
+            {
+                pickerValue = pickerValue.Replace(" (in use)", "");
+            }
+
+            Equipment equipment = equipmentDBController.GetEquipment(pickerValue).FirstOrDefault();
+
+            equipment.UserID = Constants.user.Id;
+
+            equipmentDBController.SaveEquipment(equipment);
+
+            DisplayAlert("Success","You have successfully booked equipment","OK");
+            Navigation.PushAsync(new Views.Request());
+
+        }
+    }
 }

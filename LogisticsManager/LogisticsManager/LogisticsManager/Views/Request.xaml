@@ -9,7 +9,7 @@
             <Picker x:Name="pickerEquipment" Title="Select Equipment"/>
             <Label x:Name="labelReason" Text="Reason"/>
             <Entry x:Name="entryReason" Placeholder="Reason"/>
-            <Button x:Name="buttonSubmit" Text="Submit"/>
+            <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

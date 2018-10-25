@@ -16,11 +16,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Equipment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EquipmentDBController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Task.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UsersDBController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Report.xaml.cs">
       <DependentUpon>Report.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -52,10 +61,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Data\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Report.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -63,6 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Request.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Register.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
