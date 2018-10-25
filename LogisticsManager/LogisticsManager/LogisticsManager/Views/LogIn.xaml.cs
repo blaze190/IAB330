@@ -14,12 +14,14 @@ namespace LogisticsManager.Views
 	public partial class LogIn : ContentPage
 	{
         private UsersDBController usersDBController;
+        private CompaniesDBController companiesDBController;
         public LogIn ()
 		{
 			InitializeComponent ();
             
 
             this.usersDBController = new UsersDBController();
+            this.companiesDBController = new CompaniesDBController();
 
             entryPassword.IsPassword = true;
 
@@ -39,7 +41,6 @@ namespace LogisticsManager.Views
         }
 
         bool checkPassword() {
-            this.usersDBController = new UsersDBController();
             string qUsername = entryUsername.Text;
             string qPassword = entryPassword.Text;
 
@@ -49,6 +50,7 @@ namespace LogisticsManager.Views
                 if (user.Password == qPassword)
                 {
                     Constants.user = user;
+                    Constants.company = companiesDBController.GetCompany(user.CompanyID).FirstOrDefault();
                     return true;
                 }
                 else

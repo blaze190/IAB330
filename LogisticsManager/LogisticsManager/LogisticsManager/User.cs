@@ -68,6 +68,20 @@ namespace LogisticsManager
             }
         }
 
+        private int _companyID;
+        public int CompanyID
+        {
+            get
+            {
+                return _companyID;
+            }
+            set
+            {
+                this._companyID = value;
+                OnPropertyChanged(nameof(CompanyID));
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {

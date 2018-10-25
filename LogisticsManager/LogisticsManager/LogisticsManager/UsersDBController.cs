@@ -53,6 +53,17 @@ namespace LogisticsManager
             }
         }
 
+        public IEnumerable<User> GetUserByID(int id)
+        {
+            lock (locker)
+            {
+                var query = from user in database.Table<User>()
+                            where user.Id == id
+                            select user;
+                return query.AsEnumerable();
+            }
+        }
+
         public int SaveUser(User userInstance)
         {
             lock (locker)

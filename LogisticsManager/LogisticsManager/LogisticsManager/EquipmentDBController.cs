@@ -37,7 +37,8 @@ namespace LogisticsManager
               Add(new Equipment
               {
                   Name = name,
-                  UserID = userID
+                  UserID = userID,
+                  CompanyID = 0
               });
         }
 

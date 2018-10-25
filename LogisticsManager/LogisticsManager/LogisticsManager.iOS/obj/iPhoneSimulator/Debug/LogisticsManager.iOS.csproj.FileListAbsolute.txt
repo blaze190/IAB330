@@ -104,7 +104,6 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\optimized\
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\LogisticsManager.iOS.csprojAssemblyReference.cache
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\App.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\MainPage.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\LogisticsManager.iOS.csproj.CoreCompileInputs.cache
@@ -121,4 +120,7 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\Tasks.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\Report.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\Request.xaml.g.cs
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Register.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\Register.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\RegisterUser.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\LogisticsManager.iOS.csprojAssemblyReference.cache
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.iOS\obj\iPhoneSimulator\Debug\Views\NewsFeed.xaml.g.cs

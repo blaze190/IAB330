@@ -14,6 +14,8 @@ namespace LogisticsManager
         {
             InitializeComponent();
 
+            
+
             clearStack();
             hideButtons();
             unhideButtons();
@@ -45,9 +47,20 @@ namespace LogisticsManager
             Navigation.PushAsync(new Views.Register());
         }
 
+        private void RegisterUser_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Views.RegisterUser());
+        }
+
+        private void NewsFeed_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Views.NewsFeed());
+        }
+
         private void Logout_Button_Clicked(object sender, EventArgs e)
         {
             Constants.user = null;
+            Constants.company = null;
             Navigation.PushAsync(new MainPage());
         }
 
@@ -58,6 +71,7 @@ namespace LogisticsManager
             buttonRequest.IsVisible = false;
             buttonLogout.IsVisible = false;
             buttonRegister.IsVisible = false;
+            buttonRegisterUser.IsVisible = false;
         }
 
         private void unhideButtons()
@@ -68,8 +82,11 @@ namespace LogisticsManager
                 buttonReport.IsVisible = true;
                 buttonRequest.IsVisible = true;
                 buttonLogout.IsVisible = true;
-            }
-            else {
+                if (Constants.user.AccessLevel == 10)
+                {
+                    buttonRegisterUser.IsVisible = true;
+                }
+            } else {
                 buttonLogin.IsVisible = true;
                 buttonRegister.IsVisible = true;
             }

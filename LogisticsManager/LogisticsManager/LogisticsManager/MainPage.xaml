@@ -8,6 +8,11 @@
 
     <StackLayout Padding="40,40,40,0" VerticalOptions="StartAndExpand">
 
+        <Label Text=""
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                x:Name="labelName"/>
+
         <Button Text="Tasks" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
@@ -26,11 +31,29 @@
                 Clicked="Report_Button_Clicked"
                 x:Name="buttonReport"/>
 
+        <Button Text="News Feed" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="NewsFeed_Button_Clicked"
+                x:Name="buttonNewsFeed"/>
+
         <Button Text="Login" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="Login_Button_Clicked"
                 x:Name="buttonLogin"/>
+
+        <Button Text="Register" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="Register_Button_Clicked"
+                x:Name="buttonRegister"/>
+
+        <Button Text="Register Accounts" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="RegisterUser_Button_Clicked"
+                x:Name="buttonRegisterUser"/>
 
         <Button Text="Logout" 
                 HorizontalOptions="Center" 
@@ -38,11 +61,7 @@
                 Clicked="Logout_Button_Clicked"
                 x:Name="buttonLogout"/>
 
-        <Button Text="Register" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="Register_Button_Clicked"
-                x:Name="buttonRegister"/>
+        
 
 
 

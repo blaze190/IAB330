@@ -10,6 +10,9 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.And
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\LogIn.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\Report.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\Request.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\Register.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\RegisterUser.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\NewsFeed.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\LogisticsManager.Android.csproj.CoreCompileInputs.cache
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\XamlC.stamp
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\LogisticsManager.Android.dll
@@ -99,7 +102,6 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.And
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\Views\Register.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\linksrc\LogisticsManager.Android.pdb
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
