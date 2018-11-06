@@ -21,6 +21,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)CompaniesDBController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Equipment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EquipmentDBController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IConnection.cs" />

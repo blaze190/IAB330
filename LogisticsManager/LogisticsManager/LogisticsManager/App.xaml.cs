@@ -13,9 +13,9 @@ namespace LogisticsManager
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage())
+            MainPage = new NavigationPage(new Views.LogIn())
             {
-                BarBackgroundColor = Color.FromRgb(0, 192, 182) //Blue
+                BarBackgroundColor = Color.FromRgb(33, 33, 33) //Black
             };
         }
 

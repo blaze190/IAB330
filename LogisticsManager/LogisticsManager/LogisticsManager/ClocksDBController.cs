@@ -44,9 +44,31 @@ namespace LogisticsManager
         {
             lock (locker)
             {
-                var query = from comp in database.Table<Clock>()
-                            where comp.Id == id
-                            select comp;
+                var query = from clock in database.Table<Clock>()
+                            where clock.Id == id
+                            select clock;
+                return query.AsEnumerable();
+            }
+        }
+
+        public IEnumerable<Clock> GetOrderedClockIns()
+        {
+            lock (locker)
+            {
+                var query = from clock in database.Table<Clock>()
+                            orderby clock.ClockIn descending
+                            select clock;
+                return query.AsEnumerable();
+            }
+        }
+
+        public IEnumerable<Clock> GetOrderedClockOuts()
+        {
+            lock (locker)
+            {
+                var query = from clock in database.Table<Clock>()
+                            orderby clock.ClockOut descending
+                            select clock;
                 return query.AsEnumerable();
             }
         }

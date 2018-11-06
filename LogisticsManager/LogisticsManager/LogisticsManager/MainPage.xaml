@@ -6,78 +6,143 @@
              Title="Managise"
              NavigationPage.HasBackButton="False">
 
-    <StackLayout Padding="40,0,40,0" VerticalOptions="StartAndExpand">
+    <Grid Padding="20,0,20,0">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="15"/>
+
+        </Grid.RowDefinitions>
 
         <Label Text=""
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                x:Name="labelClock"/>
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"
+               x:Name="labelClock"
+               Grid.Row="1"/>
 
         <Button Text="Clock In" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="ClockIn_Button_Clicked"
-                x:Name="buttonClockIn" />
+                x:Name="buttonClockIn"
+                Grid.Row="2"
+                BackgroundColor="#212121"
+                TextColor="#ffffff"/>
 
-        <Button Text="Tasks" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="Tasks_Button_Clicked"
-                x:Name="buttonTasks" />
-
-        <Button Text="Request" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="Request_Button_Clicked"
-                x:Name="buttonRequest" />
-
-        <Button Text="Report" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="Report_Button_Clicked"
-                x:Name="buttonReport"/>
-
-        <Button Text="News Feed" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="NewsFeed_Button_Clicked"
-                x:Name="buttonNewsFeed"/>
-
-        <Button Text="Login" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="Login_Button_Clicked"
-                x:Name="buttonLogin" />
-
-        <Button Text="Register" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="Register_Button_Clicked"
-                x:Name="buttonRegister" />
-
-        <Button Text="Register Accounts" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="RegisterUser_Button_Clicked"
-                x:Name="buttonRegisterUser"/>
 
         <Button Text="Clock Out" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="ClockOut_Button_Clicked"
-                x:Name="buttonClockOut" />
+                x:Name="buttonClockOut" 
+                Grid.Row="2"
+                BackgroundColor="#212121"
+                TextColor="#ffffff"/>
 
-        <Button Text="Logout" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                Clicked="Logout_Button_Clicked"
-                x:Name="buttonLogout"/>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-        
+            <!--Tasks Button-->
+            <Button Text="Tasks"
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"
+                    Clicked="Tasks_Button_Clicked"
+                    x:Name="buttonTasks" 
+                    Grid.Column="0"
+                    BackgroundColor="#212121"
+                    TextColor="#ffffff"
+                    FontSize="25">
+
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" 
+                                iOS="Font Awesome 5 Free" 
+                                WinPhone="Assets/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+                </Button.FontFamily>
+
+            </Button>
+
+            <!--News Feed Button-->
+            <Button Text="Newspaper" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"
+                    Clicked="NewsFeed_Button_Clicked"
+                    x:Name="buttonNewsFeed"
+                    Grid.Column="1"
+                    BackgroundColor="#212121"
+                    TextColor="#ffffff"
+                    FontSize="25">
+
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" 
+                                iOS="Font Awesome 5 Free" 
+                                WinPhone="Assets/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+                </Button.FontFamily>
+
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Users Button-->
+            <Button Text="Users-cog" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"
+                    x:Name="buttonUsers"
+                    Grid.Column="0"
+                    BackgroundColor="#212121"
+                    TextColor="#ffffff"
+                    FontSize="25"
+                    Clicked="Users_Button_Clicked">
+
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" 
+                                iOS="Font Awesome 5 Free" 
+                                WinPhone="Assets/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+                </Button.FontFamily>
+
+            </Button>
+
+            <!--Log Out Button-->
+            <Button Text="Power-off" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"
+                    x:Name="buttonLogOut"
+                    Grid.Column="1"
+                    BackgroundColor="#212121"
+                    TextColor="#ffffff"
+                    FontSize="25"
+                    Clicked="Logout_Button_Clicked">
+
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" 
+                                iOS="Font Awesome 5 Free" 
+                                WinPhone="Assets/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+                </Button.FontFamily>
+
+            </Button>
+
+        </Grid>
 
 
 
 
-    </StackLayout>
+    </Grid>
 
 </ContentPage>

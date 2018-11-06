@@ -4,7 +4,9 @@
              x:Class="LogisticsManager.Views.NewsFeed"
              Title="News Feed">
     <ContentPage.Content>
-        <StackLayout x:Name="NewsFeedStack" Padding="40,0,40,0">
-        </StackLayout>
+        <ScrollView>
+            <StackLayout x:Name="NewsFeedStack">
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

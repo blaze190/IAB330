@@ -131,6 +131,9 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="background.png" />
+    <Content Include="managise.png" />
+    <Content Include="managiseLogo.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +152,15 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Font Awesome 5 Free-Regular-400.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Font Awesome 5 Free-Solid-900.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Font Awesome 5 Brands-Regular-400.otf" />
   </ItemGroup>
   <Import Project="..\LogisticsManager\LogisticsManager.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

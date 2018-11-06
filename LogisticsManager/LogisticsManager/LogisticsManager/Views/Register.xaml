@@ -2,16 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LogisticsManager.Views.Register"
-             Title="Register Company">
+             Title="Register">
     <ContentPage.Content>
-        <StackLayout x:Name="RegisterStack" Padding="40,40,40,0" VerticalOptions="StartAndExpand">
-            <Label x:Name="labelCompanyName" Text="Company Name"/>
+        <StackLayout x:Name="RegisterStack" Padding="40,5,40,0" VerticalOptions="StartAndExpand">
             <Entry x:Name="entryCompanyName" Placeholder="Company Name"/>
-            <Label x:Name="labelUsername" Text="Admin Username"/>
+            <Entry x:Name="entryEmail" Placeholder="Email"/>
             <Entry x:Name="entryUsername" Placeholder="Admin Username"/>
-            <Label x:Name="labelPassword" Text="Password"/>
             <Entry x:Name="entryPassword" Placeholder="Password"/>
-            <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
+            <Entry x:Name="entryReEnterPassword" Placeholder="Re-Enter Password"/>
+            <Button x:Name="buttonSubmit" Text="Submit" BackgroundColor="#212121" TextColor="#ffffff" Clicked="buttonSubmitClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -658,8 +658,26 @@
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\background.png">
+      <PackagePath>background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\managise.png">
+      <PackagePath>managise.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\managiseLogo.png">
+      <PackagePath>managiseLogo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Font Awesome 5 Free-Regular-400.otf">
+      <PackagePath>Assets\Font Awesome 5 Free-Regular-400.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Font Awesome 5 Free-Solid-900.otf">
+      <PackagePath>Assets\Font Awesome 5 Free-Solid-900.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\Font Awesome 5 Brands-Regular-400.otf">
+      <PackagePath>Assets\Font Awesome 5 Brands-Regular-400.otf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\LogisticsManager.UWP.xr.xml">
       <PackagePath>LogisticsManager.UWP.xr.xml</PackagePath>

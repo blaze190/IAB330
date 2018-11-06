@@ -96,6 +96,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Font Awesome 5 Free-Regular-400.otf" />
+    <BundleResource Include="Resources\Font Awesome 5 Free-Solid-900.otf" />
+    <BundleResource Include="Resources\Font Awesome 5 Brands-Regular-400.otf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -154,7 +157,15 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BundleResource Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\managise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\managiseLogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\LogisticsManager\LogisticsManager.projitems" Label="Shared" />
 </Project>

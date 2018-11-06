@@ -2,14 +2,31 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LogisticsManager.Views.LogIn"
-             Title="Log In">
+             NavigationPage.HasNavigationBar="False">
+
     <ContentPage.Content>
-        <StackLayout x:Name="LogInStack" Padding="40,40,40,0" VerticalOptions="StartAndExpand">
-            <Label x:Name="labelUsername" Text="Username"/>
-            <Entry x:Name="entryUsername" Placeholder="Username"/>
-            <Label x:Name="labelPassword" Text="Password"/>
-            <Entry x:Name="entryPassword" Placeholder="Password"/>
-            <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
-        </StackLayout>
+        <Grid Padding="20,0,20,0">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="60"/> 
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+
+            </Grid.RowDefinitions>
+
+            <Image x:Name="imageManagise" Source="managise.png" Grid.Row="1"/>
+            <Entry x:Name="entryUsername" Grid.Row="3" Placeholder="Username"/>
+            <Entry x:Name="entryPassword" IsPassword="True" Grid.Row="4" Placeholder="Password"/>
+            <Button x:Name="buttonLogIn" Text="Log In" Grid.Row="5" BackgroundColor="Transparent" TextColor="#212121" Clicked="buttonSubmitClicked"/>
+            <Button x:Name="buttonRegister" Text="Register" Grid.Row="6" BackgroundColor="Transparent" TextColor="#212121" Clicked="buttonRegisterClicked"/>
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

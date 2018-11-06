@@ -39,29 +39,9 @@ namespace LogisticsManager
             Navigation.PushAsync(new Views.Tasks());
         }
 
-        private void Login_Button_Clicked(object sender, EventArgs e)
+        private void Users_Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Views.LogIn());
-        }
-
-        private void Report_Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Views.Report());
-        }
-
-        private void Request_Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Views.Request());
-        }
-
-        private void Register_Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Views.Register());
-        }
-
-        private void RegisterUser_Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Views.RegisterUser());
+            Navigation.PushAsync(new Views.Tasks());
         }
 
         private void NewsFeed_Button_Clicked(object sender, EventArgs e)
@@ -71,6 +51,7 @@ namespace LogisticsManager
 
         private void ClockOut_Button_Clicked(object sender, EventArgs e)
         {
+            clock.UserID = Constants.user.Id;
             clock.ClockOut = DateTime.Now;
 
             clocksDBController.SaveClock(clock);
@@ -97,47 +78,35 @@ namespace LogisticsManager
             Constants.user = null;
             Constants.company = null;
             Constants.clock = null;
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new Views.LogIn());
         }
 
         private void hideButtons() {
-            buttonLogin.IsVisible = false;
             buttonTasks.IsVisible = false;
-            buttonReport.IsVisible = false;
-            buttonRequest.IsVisible = false;
-            buttonLogout.IsVisible = false;
-            buttonRegister.IsVisible = false;
-            buttonRegisterUser.IsVisible = false;
             buttonNewsFeed.IsVisible = false;
             labelClock.IsVisible = false;
             buttonClockIn.IsVisible = false;
             buttonClockOut.IsVisible = false;
+            buttonUsers.IsVisible = false;
+            buttonLogOut.IsVisible = false;
         }
 
         private void unhideButtons()
         {
-            if (Constants.user != null)
+            buttonTasks.IsVisible = true;
+            labelClock.IsVisible = true;
+            buttonLogOut.IsVisible = true;
+            buttonNewsFeed.IsVisible = true;
+            if (Constants.user.AccessLevel == 10)
             {
-                buttonTasks.IsVisible = true;
-                buttonReport.IsVisible = true;
-                buttonRequest.IsVisible = true;
-                buttonLogout.IsVisible = true;
-                labelClock.IsVisible = true;
-                if (Constants.user.AccessLevel == 10)
-                {
-                    buttonRegisterUser.IsVisible = true;
-                    buttonNewsFeed.IsVisible = true;
-                }
-                if (Constants.clock == null)
-                {
-                    buttonClockIn.IsVisible = true;
-                }
-                else {
-                    buttonClockOut.IsVisible = true;
-                }
-            } else {
-                buttonLogin.IsVisible = true;
-                buttonRegister.IsVisible = true;
+                buttonUsers.IsVisible = true;
+            }
+            if (Constants.clock == null)
+            {
+                buttonClockIn.IsVisible = true;
+            }
+            else {
+                buttonClockOut.IsVisible = true;
             }
         }
 

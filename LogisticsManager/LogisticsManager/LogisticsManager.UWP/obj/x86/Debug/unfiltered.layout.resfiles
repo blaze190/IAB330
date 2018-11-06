@@ -1,5 +1,8 @@
 WinMetadata\Windows.winmd
 e_sqlite3.dll
+Assets\Font Awesome 5 Brands-Regular-400.otf
+Assets\Font Awesome 5 Free-Regular-400.otf
+Assets\Font Awesome 5 Free-Solid-900.otf
 Assets\LargeTile.scale-100.png
 Assets\LargeTile.scale-200.png
 Assets\LargeTile.scale-400.png
@@ -27,7 +30,10 @@ Assets\StoreLogo.scale-400.png
 Assets\Wide310x150Logo.scale-100.png
 Assets\Wide310x150Logo.scale-200.png
 Assets\Wide310x150Logo.scale-400.png
+background.png
 App.xbf
 LogisticsManager.UWP.xr.xml
 MainPage.xbf
+managise.png
+managiseLogo.png
 Properties\Default.rd.xml
