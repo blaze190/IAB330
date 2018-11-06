@@ -39,9 +39,30 @@ namespace LogisticsManager
             Navigation.PushAsync(new Views.Tasks());
         }
 
-        private void Users_Button_Clicked(object sender, EventArgs e)
+        private void Profile_Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Views.Tasks());
+            DisplayAlert("Alert","This feature has not been implemented yet","OK");
+        }
+
+        private async void Users_Button_Clicked(object sender, EventArgs e)
+        {
+            var actionSheet = await DisplayActionSheet("Select an Option", "Cancel", null, "Register User", "Manage Users", "Profile");
+
+            switch (actionSheet)
+            {
+                case "Cancel":
+                    break;
+
+                case "Register User":
+                    await Navigation.PushAsync(new Views.RegisterUser());
+                    break;
+
+                case "Manage User":
+                    break;
+
+                case "Profile":
+                    break;
+            }
         }
 
         private void NewsFeed_Button_Clicked(object sender, EventArgs e)
@@ -89,6 +110,7 @@ namespace LogisticsManager
             buttonClockOut.IsVisible = false;
             buttonUsers.IsVisible = false;
             buttonLogOut.IsVisible = false;
+            buttonProfile.IsVisible = false;
         }
 
         private void unhideButtons()
@@ -97,17 +119,17 @@ namespace LogisticsManager
             labelClock.IsVisible = true;
             buttonLogOut.IsVisible = true;
             buttonNewsFeed.IsVisible = true;
+
             if (Constants.user.AccessLevel == 10)
-            {
                 buttonUsers.IsVisible = true;
-            }
+            else
+                buttonProfile.IsVisible = true;
+            
             if (Constants.clock == null)
-            {
                 buttonClockIn.IsVisible = true;
-            }
-            else {
+            else 
                 buttonClockOut.IsVisible = true;
-            }
+            
         }
 
         private void clearStack() {

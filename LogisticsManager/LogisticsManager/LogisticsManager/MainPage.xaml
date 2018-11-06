@@ -118,6 +118,26 @@
 
             </Button>
 
+            <!--Profile Button-->
+            <Button Text="User" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"
+                    x:Name="buttonProfile"
+                    Grid.Column="0"
+                    BackgroundColor="#212121"
+                    TextColor="#ffffff"
+                    FontSize="25"
+                    Clicked="Profile_Button_Clicked">
+
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" 
+                                iOS="Font Awesome 5 Free" 
+                                WinPhone="Assets/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+                </Button.FontFamily>
+
+            </Button>
+
             <!--Log Out Button-->
             <Button Text="Power-off" 
                     HorizontalOptions="FillAndExpand" 

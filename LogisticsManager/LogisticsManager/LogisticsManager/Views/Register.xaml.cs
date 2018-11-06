@@ -35,7 +35,7 @@ namespace LogisticsManager.Views
         private void register()
         {
 
-            if (valid())
+            if (Valid())
             {
                 DisplayAlert("Success", "You have successfully created a company account", "OK");
                 Navigation.PushAsync(new Views.LogIn());
@@ -46,7 +46,7 @@ namespace LogisticsManager.Views
 
         }
 
-        private bool valid() {
+        private bool Valid() {
             try
             {
                 Company company = new Company();

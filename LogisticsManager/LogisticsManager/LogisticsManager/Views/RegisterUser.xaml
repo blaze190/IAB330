@@ -1,16 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LogisticsManager.Views.RegisterUser">
+             x:Class="LogisticsManager.Views.RegisterUser"
+             Title="Register User">
     <ContentPage.Content>
         <StackLayout x:Name="RegisterUserStack" Padding="40,40,40,0" VerticalOptions="StartAndExpand">
-            <Label x:Name="labelUsername" Text="Username"/>
+            
             <Entry x:Name="entryUsername" Placeholder="Username"/>
-            <Label x:Name="labelPassword" Text="Password"/>
+            
             <Entry x:Name="entryPassword" Placeholder="Password"/>
-            <Label x:Name="labelAccessLevel" Text="Access Level"/>
-            <Picker x:Name="pickerAccessLevel" Title="Select an Access Level"/>
-            <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
+            
+            <Picker x:Name="pickerAccessLevel" Title="Access Level"/>
+            
+            <Button x:Name="buttonSubmit" 
+                    Text="Submit" 
+                    Clicked="buttonSubmitClicked" 
+                    BackgroundColor="#212121" 
+                    TextColor="#ffffff"/>
+        
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
