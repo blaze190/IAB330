@@ -118,16 +118,16 @@
 
             </Button>
 
-            <!--Profile Button-->
-            <Button Text="User" 
+            <!--Report Button-->
+            <Button Text="Exclamation-triangle" 
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand"
-                    x:Name="buttonProfile"
+                    x:Name="buttonReport"
                     Grid.Column="0"
                     BackgroundColor="#212121"
                     TextColor="#ffffff"
                     FontSize="25"
-                    Clicked="Profile_Button_Clicked">
+                    Clicked="Report_Button_Clicked">
 
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String" 

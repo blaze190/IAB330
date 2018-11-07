@@ -5,11 +5,12 @@
              Title="Report">
     <ContentPage.Content>
         <StackLayout x:Name="ReportStack" Padding="40,40,40,0" VerticalOptions="StartAndExpand">
-            <Label x:Name="labelCategory" Text="Category"/>
             <Picker x:Name="pickerCategory" Title="Select a Category"/>
-            <Label x:Name="labelDescription" Text="Description"/>
-            <Entry x:Name="entryDescription" Placeholder="Description"/>
-            <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
+            <Entry x:Name="entryDescription" Placeholder="Report Description"/>
+            <Button x:Name="buttonSubmit" Text="Submit" 
+                    Clicked="buttonSubmitClicked"
+                    BackgroundColor="#212121"
+                    TextColor="#ffffff"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

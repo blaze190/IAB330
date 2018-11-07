@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LogisticsManager.Views.Tasks"
              Title="Tasks">
+    
     <ContentPage.Content>
-        <StackLayout x:Name="TasksStack" Padding="40,0,40,0">
-        </StackLayout>
+        <ScrollView>
+            <StackLayout x:Name="TasksStack">
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
+    
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="Add Task" Activated="OnAdd"
-               Priority="0" Order="Secondary" />
-        <ToolbarItem Name="Delete All Tasks" Activated="OnDeleteAll"
-               Priority="1" Order="Secondary" />
+        <ToolbarItem x:Name="toolbarItemAdd" Icon="pluscircle.png" Clicked="AddClicked"/>
     </ContentPage.ToolbarItems>
+    
 </ContentPage>

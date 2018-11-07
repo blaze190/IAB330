@@ -22,10 +22,10 @@ namespace LogisticsManager
 
             if (Constants.clock == null)
             {
-                labelClock.Text = "Clocked Out";
+                labelClock.Text = "You are Clocked Out";
             }
             else {
-                labelClock.Text = "Clocked In";
+                labelClock.Text = "You are Clocked In";
             }
 
             clearStack();
@@ -39,28 +39,23 @@ namespace LogisticsManager
             Navigation.PushAsync(new Views.Tasks());
         }
 
-        private void Profile_Button_Clicked(object sender, EventArgs e)
+        private void Report_Button_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Alert","This feature has not been implemented yet","OK");
+            Navigation.PushAsync(new Views.Report());
         }
 
         private async void Users_Button_Clicked(object sender, EventArgs e)
         {
-            var actionSheet = await DisplayActionSheet("Select an Option", "Cancel", null, "Register User", "Manage Users", "Profile");
+            var actionSheet = await DisplayActionSheet("Select an Option", "Cancel", null, "Register User", "Report");
 
             switch (actionSheet)
             {
-                case "Cancel":
-                    break;
-
                 case "Register User":
                     await Navigation.PushAsync(new Views.RegisterUser());
                     break;
 
-                case "Manage User":
-                    break;
-
-                case "Profile":
+                case "Report":
+                    await Navigation.PushAsync(new Views.Report());
                     break;
             }
         }
@@ -74,6 +69,7 @@ namespace LogisticsManager
         {
             clock.UserID = Constants.user.Id;
             clock.ClockOut = DateTime.Now;
+            clock.ClockIn = DateTime.Parse("1/1/0001");
 
             clocksDBController.SaveClock(clock);
 
@@ -86,6 +82,7 @@ namespace LogisticsManager
         {
             clock.UserID = Constants.user.Id;
             clock.ClockIn = DateTime.Now;
+            clock.ClockOut = DateTime.Parse("1/1/0001");
 
             clocksDBController.SaveClock(clock);
 
@@ -110,7 +107,7 @@ namespace LogisticsManager
             buttonClockOut.IsVisible = false;
             buttonUsers.IsVisible = false;
             buttonLogOut.IsVisible = false;
-            buttonProfile.IsVisible = false;
+            buttonReport.IsVisible = false;
         }
 
         private void unhideButtons()
@@ -123,7 +120,7 @@ namespace LogisticsManager
             if (Constants.user.AccessLevel == 10)
                 buttonUsers.IsVisible = true;
             else
-                buttonProfile.IsVisible = true;
+                buttonReport.IsVisible = true;
             
             if (Constants.clock == null)
                 buttonClockIn.IsVisible = true;

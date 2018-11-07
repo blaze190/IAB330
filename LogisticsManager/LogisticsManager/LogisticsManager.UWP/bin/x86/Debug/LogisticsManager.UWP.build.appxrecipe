@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\LogisticsManager.UWP.exe">
       <PackagePath>entrypoint\LogisticsManager.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\nunit\3.11.0\lib\netstandard2.0\nunit.framework.dll">
+      <PackagePath>nunit.framework.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
@@ -550,6 +553,15 @@
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\nunit3testadapter\3.11.0\build\net35\NUnit3.TestAdapter.dll">
+      <PackagePath>NUnit3.TestAdapter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\nunit3testadapter\3.11.0\build\net35\nunit.engine.dll">
+      <PackagePath>nunit.engine.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\nunit3testadapter\3.11.0\build\net35\nunit.engine.api.dll">
+      <PackagePath>nunit.engine.api.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -658,14 +670,11 @@
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\background.png">
-      <PackagePath>background.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\managise.png">
       <PackagePath>managise.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\managiseLogo.png">
-      <PackagePath>managiseLogo.png</PackagePath>
+    <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\pluscircle.png">
+      <PackagePath>pluscircle.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

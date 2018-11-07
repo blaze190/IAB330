@@ -476,7 +476,6 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\Xamarin.Forms.Platform.UAP.dll
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.dll
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\LogisticsManager.UWP.csprojAssemblyReference.cache
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\App.g.i.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\App.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\MainPage.g.i.cs
@@ -612,4 +611,10 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\RegisterUser.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\NewsFeed.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\NewTask.xaml.g.cs
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\UsersMenu.xaml.g.cs
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.framework.dll
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.framework.pdb
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\NUnit3.TestAdapter.dll
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\NUnit3.TestAdapter.pdb
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.engine.dll
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.engine.api.dll
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\LogisticsManager.UWP.csprojAssemblyReference.cache

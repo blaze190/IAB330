@@ -9,7 +9,7 @@
             <Entry x:Name="entryEmail" Placeholder="Email"/>
             <Entry x:Name="entryUsername" Placeholder="Admin Username"/>
             <Entry x:Name="entryPassword" Placeholder="Password"/>
-            <Entry x:Name="entryReEnterPassword" Placeholder="Re-Enter Password"/>
+            <Entry x:Name="entryReEnterPassword" IsPassword="True" Placeholder="Re-Enter Password"/>
             <Button x:Name="buttonSubmit" Text="Submit" BackgroundColor="#212121" TextColor="#ffffff" Clicked="buttonSubmitClicked"/>
         </StackLayout>
     </ContentPage.Content>

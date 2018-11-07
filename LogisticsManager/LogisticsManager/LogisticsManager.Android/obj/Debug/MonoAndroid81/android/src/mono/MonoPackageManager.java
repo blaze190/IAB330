@@ -108,6 +108,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "LogisticsManager.Android.dll" comes first in this list. */
 		"LogisticsManager.Android.dll",
 		"FormsViewGroup.dll",
+		"nunit.framework.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",

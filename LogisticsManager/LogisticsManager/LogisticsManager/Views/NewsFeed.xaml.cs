@@ -89,7 +89,7 @@ namespace LogisticsManager.Views
             {
                 if (usersDBController.GetUserByID(clock.UserID).FirstOrDefault() != null) {
 
-                    if (clock.ClockOut.ToString().Contains("1/1/0001 12:00:00 AM"))
+                    if (clock.ClockOut == DateTime.Parse("1/1/0001")  )
                     {
                         if (usersDBController.GetUserByID(clock.UserID).FirstOrDefault().CompanyID == Constants.company.Id)
                         {
@@ -112,7 +112,7 @@ namespace LogisticsManager.Views
                 if (usersDBController.GetUserByID(clock.UserID).FirstOrDefault() != null)
                 {
 
-                    if (!clock.ClockOut.ToString().Contains("1/1/0001 12:00:00 AM"))
+                    if (clock.ClockIn == DateTime.Parse("1/1/0001"))
                     {
                         if (usersDBController.GetUserByID(clock.UserID).FirstOrDefault().CompanyID == Constants.company.Id)
                         {
@@ -176,7 +176,7 @@ namespace LogisticsManager.Views
                 labelDateTimeUser.FontSize = 8;
 
                 //Customise remove button
-                buttonRemove.WidthRequest = 35;
+                buttonRemove.WidthRequest = 40;
                 buttonRemove.HeightRequest = 35;
                 buttonRemove.BackgroundColor = Color.Transparent;
                 buttonRemove.TextColor = Color.FromHex("#212121"); //Black
@@ -208,7 +208,7 @@ namespace LogisticsManager.Views
                 labelIcon.Text = entry.GetIcon();
                 labelDesc.Text = entry.GetDesc();
                 labelDateTimeUser.Text = entry.GetUser() + " " + entry.GetDateTime().ToString();
-                buttonRemove.Text = "Times";
+                buttonRemove.Text = "Eye-slash";
 
                 //Add elements to the grid
                 grid.Children.Add(labelIcon, 0, 0);

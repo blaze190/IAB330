@@ -5,12 +5,9 @@
              Title="New Task">
     <ContentPage.Content>
         <StackLayout x:Name="NewTaskStack" Padding="40,40,40,0" VerticalOptions="StartAndExpand">
-            <Label x:Name="labelAssignment" Text="Assign The Task To"/>
-            <Picker x:Name="pickerAssignment" Title="Select an Access Level"/>
-            <Label x:Name="labelName" Text="Task Name"/>
-            <Entry x:Name="entryName" Placeholder="Name"/>
-            <Label x:Name="labelDescription" Text="Task Description"/>
-            <Entry x:Name="entryDescription" Placeholder="Description"/>
+            <Picker x:Name="pickerAssignment" Title="Assign Task To:"/>
+            <Entry x:Name="entryName" Placeholder="Task Name"/>
+            <Entry x:Name="entryDescription" Placeholder="Task Description"/>
             <Button x:Name="buttonSubmit" Text="Submit" Clicked="buttonSubmitClicked"/>
         </StackLayout>
     </ContentPage.Content>
