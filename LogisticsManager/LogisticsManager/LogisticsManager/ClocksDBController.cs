@@ -91,24 +91,6 @@ namespace LogisticsManager
             }
         }
 
-        public void SaveAllClocks()
-        {
-            lock (locker)
-            {
-                foreach (var clockInstance in this.Clocks)
-                {
-                    if (clockInstance.Id != 0)
-                    {
-                        database.Update(clockInstance);
-                    }
-                    else
-                    {
-                        database.Insert(clockInstance);
-                    }
-                }
-            }
-        }
-
         public int DeleteClock(Clock clockInstance)
         {
             var id = clockInstance.Id;

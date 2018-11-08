@@ -69,24 +69,6 @@ namespace LogisticsManager
             }
         }
 
-        public void SaveAllTasks()
-        {
-            lock (locker)
-            {
-                foreach (var taskInstance in this.Tasks)
-                {
-                    if (taskInstance.Id != 0)
-                    {
-                        database.Update(taskInstance);
-                    }
-                    else
-                    {
-                        database.Insert(taskInstance);
-                    }
-                }
-            }
-        }
-
         public int DeleteTask(Task taskInstance)
         {
             var id = taskInstance.Id;

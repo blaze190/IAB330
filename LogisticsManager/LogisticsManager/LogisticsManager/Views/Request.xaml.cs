@@ -23,6 +23,9 @@ namespace LogisticsManager.Views
             populatePicker();
         }
 
+        /// <summary>
+        /// populate the dropdown menu
+        /// </summary>
         private void populatePicker() {
             //populate the dropdown
             foreach (Equipment equip in equipmentDBController.GetAllEquipment()){
@@ -38,6 +41,11 @@ namespace LogisticsManager.Views
             }
         }
 
+        /// <summary>
+        /// when the button is clicked, update the equipment in the database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void buttonSubmitClicked(object sender, EventArgs e)
         {
             string pickerValue = pickerEquipment.Items[pickerEquipment.SelectedIndex];

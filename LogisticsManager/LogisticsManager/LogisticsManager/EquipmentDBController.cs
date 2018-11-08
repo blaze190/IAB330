@@ -81,24 +81,6 @@ namespace LogisticsManager
             }
         }
 
-        public void SaveAllEquipment()
-        {
-            lock (locker)
-            {
-                foreach (var equipmentInstance in this.Equipments)
-                {
-                    if (equipmentInstance.Id != 0)
-                    {
-                        database.Update(equipmentInstance);
-                    }
-                    else
-                    {
-                        database.Insert(equipmentInstance);
-                    }
-                }
-            }
-        }
-
         public int DeleteEquipment(Equipment equipmentInstance)
         {
             var id = equipmentInstance.Id;

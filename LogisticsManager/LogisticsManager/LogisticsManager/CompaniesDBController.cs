@@ -69,24 +69,6 @@ namespace LogisticsManager
             }
         }
 
-        public void SaveAllCompanies()
-        {
-            lock (locker)
-            {
-                foreach (var companyInstance in this.Companies)
-                {
-                    if (companyInstance.Id != 0)
-                    {
-                        database.Update(companyInstance);
-                    }
-                    else
-                    {
-                        database.Insert(companyInstance);
-                    }
-                }
-            }
-        }
-
         public int DeleteCompany(Company companyInstance)
         {
             var id = companyInstance.Id;

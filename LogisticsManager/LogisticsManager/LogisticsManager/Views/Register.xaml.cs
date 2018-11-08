@@ -27,11 +27,19 @@ namespace LogisticsManager.Views
             entryPassword.IsPassword = true;
         }
 
+        /// <summary>
+        /// Register an account when the button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSubmitClicked(object sender, EventArgs e)
         {
             register();
         }
 
+        /// <summary>
+        /// Attempt to register account, if invalid a message will appear
+        /// </summary>
         private void register()
         {
 
@@ -45,35 +53,43 @@ namespace LogisticsManager.Views
 
         }
 
+        /// <summary>
+        /// Register an account and save it to the database
+        /// </summary>
+        /// <returns></returns>
         private bool Valid() {
             try
             {
+                //create a company and save to database
                 Company company = new Company();
                 company.Name = entryCompanyName.Text;
                 companiesDBController.SaveCompany(company);
 
+                //create a user
                 User user = new User();
                 user.Username = entryUsername.Text;
                 user.AccessLevel = 10;
                 user.CompanyID = company.Id;
 
-                //generate salt
+                //generate salt for password
                 byte[] salt;
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
 
-                //hashing
+                //hash password
                 var pbkdf2 = new Rfc2898DeriveBytes(entryPassword.Text, salt, 10000);
                 byte[] hash = pbkdf2.GetBytes(20);
 
-                //combine salt and password
+                //combine
                 byte[] hashBytes = new byte[36];
                 Array.Copy(salt, 0, hashBytes, 0, 16);
                 Array.Copy(hash, 0, hashBytes, 16, 20);
 
                 string savedPasswordHash = Convert.ToBase64String(hashBytes);
 
+                //set password
                 user.Password = savedPasswordHash;
-                               
+                              
+                //save user to the database
                 usersDBController.SaveUser(user);
 
                 return true;
@@ -83,6 +99,9 @@ namespace LogisticsManager.Views
             }
         }
 
+        /// <summary>
+        /// Set the opacity to all elements to 0
+        /// </summary>
         void invisibleElements()
         {
             entryCompanyName.Opacity = 0;
@@ -93,6 +112,9 @@ namespace LogisticsManager.Views
             buttonSubmit.Opacity = 0;
         }
 
+        /// <summary>
+        /// Fade in all elemets one at a time
+        /// </summary>
         async void animateElements()
         {
             await entryCompanyName.FadeTo(1, 500);

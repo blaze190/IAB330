@@ -19,48 +19,78 @@ namespace LogisticsManager.Views
 
             this.tasksDBController = new TasksDBController();
 
+            //populate picker
             pickerAssignment.Items.Add("Admin");
             pickerAssignment.Items.Add("Staff");
             pickerAssignment.Items.Add("Manager");
         }
 
+        /// <summary>
+        /// Attempt to create a task when the button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void buttonSubmitClicked(object sender, EventArgs e)
         {
-            createNewTask();
-        }
-
-        private void createNewTask() {
-
-            string pickerValue = pickerAssignment.Items[pickerAssignment.SelectedIndex];
-            int pickerInt;
-
-            if (pickerValue == "Staff")
+            if (createNewTask())
             {
-                pickerInt = 1;
-            }
-            else if (pickerValue == "Manager")
-            {
-                pickerInt = 2;
-            }
-            else if (pickerValue == "Admin")
-            {
-                pickerInt = 10;
+                DisplayAlert("Success", "You have successfully created a new task", "OK");
+                Navigation.PushAsync(new MainPage());
             }
             else
+                DisplayAlert("Alert","You have incorrectly filled out a field", "OK");
+
+            
+        }
+
+        /// <summary>
+        /// Create a new task and save it to the database
+        /// </summary>
+        /// <returns></returns>
+        private bool createNewTask() {
+
+            try
             {
-                pickerInt = 0;
+                //Assign picker value an integer for storage
+                string pickerValue = pickerAssignment.Items[pickerAssignment.SelectedIndex];
+                int pickerInt;
+
+                //The reason Staff is 1, Manager is 2 and Admin is 10
+                //is because it leaves 7 more Access Levels to add in later.
+                //Admin should always be the highest out of all access levels
+                //so it's 10
+                switch (pickerValue)
+                {
+                    case "Staff":
+                        pickerInt = 1;
+                        break;
+                    case "Manager":
+                        pickerInt = 2;
+                        break;
+                    case "Admin":
+                        pickerInt = 10;
+                        break;
+                    default:
+                        pickerInt = 0;
+                        break;
+                }
+
+                //create new task and assign attributes
+                Task task = new Task();
+                task.AccessLevel = pickerInt;
+                task.CompanyID = Constants.company.Id;
+                task.Desc = entryDescription.Text;
+                task.Name = entryName.Text;
+
+                //save to database
+                tasksDBController.SaveTask(task);
+
+                return true;
+
             }
-
-            Task task = new Task();
-            task.AccessLevel = pickerInt;
-            task.CompanyID = Constants.company.Id;
-            task.Desc = entryDescription.Text;
-            task.Name = entryName.Text;
-
-            tasksDBController.SaveTask(task);
-
-            DisplayAlert("Success", "You have successfully created a new task", "OK");
-            Navigation.PushAsync(new MainPage());
+            catch (Exception) {
+                return false;
+            }
 
         }
     }

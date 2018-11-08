@@ -72,24 +72,6 @@ namespace LogisticsManager
             }
         }
 
-        public void SaveAllReports()
-        {
-            lock (locker)
-            {
-                foreach (var reportInstance in this.Reports)
-                {
-                    if (reportInstance.Id != 0)
-                    {
-                        database.Update(reportInstance);
-                    }
-                    else
-                    {
-                        database.Insert(reportInstance);
-                    }
-                }
-            }
-        }
-
         public int DeleteReport(Report reportInstance)
         {
             var id = reportInstance.Id;

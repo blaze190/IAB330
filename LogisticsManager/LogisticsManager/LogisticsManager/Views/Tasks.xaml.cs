@@ -28,11 +28,21 @@ namespace LogisticsManager.Views
 
         }
 
+        /// <summary>
+        /// navigate to the new task page when clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void AddClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Views.NewTask());
         }
 
+        /// <summary>
+        /// return the access level from the integer input
+        /// </summary>
+        /// <param name="accessLevelInt"></param>
+        /// <returns></returns>
         string GetAccessLevel(int accessLevelInt) {
 
             switch (accessLevelInt) {
@@ -49,6 +59,9 @@ namespace LogisticsManager.Views
 
         }
 
+        /// <summary>
+        /// generate the list for the page and insert it into the stacklayout
+        /// </summary>
         private void generateList() {
 
             //Add tasks to the task list if the access level and company matches

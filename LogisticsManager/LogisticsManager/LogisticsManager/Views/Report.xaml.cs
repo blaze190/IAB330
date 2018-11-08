@@ -19,6 +19,7 @@ namespace LogisticsManager.Views
 
             this.reportsDBController = new ReportsDBController();
 
+            //populate picker
             pickerCategory.Items.Add("Death");
             pickerCategory.Items.Add("Illness");
             pickerCategory.Items.Add("Injury");
@@ -27,6 +28,11 @@ namespace LogisticsManager.Views
             pickerCategory.Items.Add("Other");
         }
 
+        /// <summary>
+        /// lodge a report when the button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void buttonSubmitClicked(object sender, EventArgs e)
         {
             if (lodgeReport()) {
@@ -38,13 +44,17 @@ namespace LogisticsManager.Views
 
         }
 
+        /// <summary>
+        /// lodge a report and save it into the database
+        /// </summary>
+        /// <returns></returns>
         bool lodgeReport()
         {
             try
             {
-
                 string pickerValue = pickerCategory.Items[pickerCategory.SelectedIndex];
 
+                //create report set attributes
                 LogisticsManager.Report report = new LogisticsManager.Report();
                 report.Type = pickerValue;
                 report.Desc = entryDescription.Text;
@@ -52,6 +62,7 @@ namespace LogisticsManager.Views
                 report.FromUserID = Constants.user.Id;
                 report.CreationDate = DateTime.Now;
 
+                //save report to database
                 reportsDBController.SaveReport(report);
 
                 return true;

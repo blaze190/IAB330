@@ -27,6 +27,9 @@ namespace LogisticsManagerUITests
             
         }
 
+        /// <summary>
+        /// Testing if the register button navigates correctly
+        /// </summary>
         [Test]
         public void RegisterButton()
         {
@@ -40,6 +43,9 @@ namespace LogisticsManagerUITests
             Assert.IsTrue(appResult != null);
         }
 
+        /// <summary>
+        /// Testing if a user can correcly register
+        /// </summary>
         [Test]
         public void Register()
         {
@@ -67,6 +73,9 @@ namespace LogisticsManagerUITests
             Assert.IsTrue(appResult != null);
         }
 
+        /// <summary>
+        /// Testing if a user can correctly log in
+        /// </summary>
         [Test]
         public void LogIn()
         {
@@ -101,6 +110,9 @@ namespace LogisticsManagerUITests
             Assert.IsTrue(appResult != null);
         }
 
+        /// <summary>
+        /// Testing if a wrong password returns an error
+        /// </summary>
         [Test]
         public void WrongPassword()
         {

@@ -82,24 +82,6 @@ namespace LogisticsManager
             }
         }
 
-        public void SaveAllUsers()
-        {
-            lock (locker)
-            {
-                foreach (var userInstance in this.Users)
-                {
-                    if (userInstance.Id != 0)
-                    {
-                        database.Update(userInstance);
-                    }
-                    else
-                    {
-                        database.Insert(userInstance);
-                    }
-                }
-            }
-        }
-
         public int DeleteUser(User userInstance)
         {
             var id = userInstance.Id;

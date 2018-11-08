@@ -21,6 +21,7 @@ namespace LogisticsManager.Views
             this.usersDBController = new UsersDBController();
             this.companiesDBController = new CompaniesDBController();
 
+            //populate picker
             pickerAccessLevel.Items.Add("Staff");
             pickerAccessLevel.Items.Add("Manager");
             pickerAccessLevel.Items.Add("Admin");
@@ -28,6 +29,11 @@ namespace LogisticsManager.Views
             entryPassword.IsPassword = true;
         }
 
+        /// <summary>
+        /// if valid, create an account when the button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSubmitClicked(object sender, EventArgs e)
         {
             if (Valid())
@@ -42,6 +48,10 @@ namespace LogisticsManager.Views
             
         }
 
+        /// <summary>
+        /// register a user using the specified data and save it into the database
+        /// </summary>
+        /// <returns></returns>
         private bool Valid()
         {
             try
@@ -59,21 +69,20 @@ namespace LogisticsManager.Views
                 //is because it leaves 7 more Access Levels to add in later.
                 //Admin should always be the highest out of all access levels
                 //so it's 10
-                if (pickerValue == "Staff")
+                switch (pickerValue)
                 {
-                    pickerInt = 1;
-                }
-                else if (pickerValue == "Manager")
-                {
-                    pickerInt = 2;
-                }
-                else if (pickerValue == "Admin")
-                {
-                    pickerInt = 10;
-                }
-                else
-                {
-                    pickerInt = 0;
+                    case "Staff":
+                        pickerInt = 1;
+                        break;
+                    case "Manager":
+                        pickerInt = 2;
+                        break;
+                    case "Admin":
+                        pickerInt = 10;
+                        break;
+                    default:
+                        pickerInt = 0;
+                        break;
                 }
                 user.AccessLevel = pickerInt;
 
