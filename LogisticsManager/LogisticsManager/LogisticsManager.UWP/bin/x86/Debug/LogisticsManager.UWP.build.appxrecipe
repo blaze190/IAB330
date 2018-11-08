@@ -553,15 +553,6 @@
     <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\nunit3testadapter\3.11.0\build\net35\NUnit3.TestAdapter.dll">
-      <PackagePath>NUnit3.TestAdapter.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\nunit3testadapter\3.11.0\build\net35\nunit.engine.dll">
-      <PackagePath>nunit.engine.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emily\.nuget\packages\nunit3testadapter\3.11.0\build\net35\nunit.engine.api.dll">
-      <PackagePath>nunit.engine.api.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

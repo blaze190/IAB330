@@ -90,7 +90,7 @@ namespace LogisticsManager.Views
                 Constants.company = companiesDBController.GetCompany(user.CompanyID).FirstOrDefault();
                 return true;
                 
-            } catch (Exception e) {
+            } catch (Exception) {
                 return false;
             }
             

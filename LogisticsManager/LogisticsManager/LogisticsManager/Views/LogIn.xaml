@@ -21,10 +21,10 @@
             </Grid.RowDefinitions>
 
             <Image x:Name="imageManagise" Source="managise.png" Grid.Row="1"/>
-            <Entry x:Name="entryUsername" Grid.Row="3" Placeholder="Username"/>
-            <Entry x:Name="entryPassword" IsPassword="True" Grid.Row="4" Placeholder="Password"/>
-            <Button x:Name="buttonLogIn" Text="Log In" Grid.Row="5" BackgroundColor="Transparent" TextColor="#212121" Clicked="buttonSubmitClicked"/>
-            <Button x:Name="buttonRegister" Text="Register" Grid.Row="6" BackgroundColor="Transparent" TextColor="#212121" Clicked="buttonRegisterClicked"/>
+            <Entry AutomationId="logInEntryUsername" x:Name="entryUsername" Grid.Row="3" Placeholder="Username"/>
+            <Entry AutomationId="logInEntryPassword" x:Name="entryPassword" IsPassword="True" Grid.Row="4" Placeholder="Password"/>
+            <Button AutomationId="logInbuttonLogIn" x:Name="buttonLogIn" Text="Log In" Grid.Row="5" BackgroundColor="Transparent" TextColor="#212121" Clicked="buttonSubmitClicked"/>
+            <Button AutomationId="logInbuttonRegister" x:Name="buttonRegister" Text="Register" Grid.Row="6" BackgroundColor="Transparent" TextColor="#212121" Clicked="buttonRegisterClicked"/>
 
 
         </Grid>

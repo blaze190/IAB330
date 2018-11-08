@@ -117,4 +117,7 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\bin\Debug\S
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\bin\Debug\SQLitePCLRaw.core.dll
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\bin\Debug\SQLite-net.xml
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\bin\Debug\nunit.framework.dll
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\bin\Debug\nunit.framework.pdb
+D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\bin\Debug\nunit.framework.xml
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManagerUnitTests\obj\Debug\LogisticsManagerUnitTests.csprojAssemblyReference.cache

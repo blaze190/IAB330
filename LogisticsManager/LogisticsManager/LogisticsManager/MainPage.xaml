@@ -21,12 +21,14 @@
         </Grid.RowDefinitions>
 
         <Label Text=""
+               AutomationId="mainPageLabelClock"
                HorizontalOptions="Center" 
                VerticalOptions="Center"
                x:Name="labelClock"
                Grid.Row="1"/>
 
         <Button Text="Clock In" 
+                AutomationId="mainPageButtonClockIn"
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="ClockIn_Button_Clicked"
@@ -37,6 +39,7 @@
 
 
         <Button Text="Clock Out" 
+                AutomationId="mainPageButtonClockOut"
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
                 Clicked="ClockOut_Button_Clicked"
@@ -53,6 +56,7 @@
 
             <!--Tasks Button-->
             <Button Text="Tasks"
+                    AutomationId="mainPageButtonTasks"
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand"
                     Clicked="Tasks_Button_Clicked"
@@ -73,6 +77,7 @@
 
             <!--News Feed Button-->
             <Button Text="Newspaper" 
+                    AutomationId="mainPageButtonNewsFeed"
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand"
                     Clicked="NewsFeed_Button_Clicked"
@@ -100,6 +105,7 @@
 
             <!--Users Button-->
             <Button Text="Users-cog" 
+                    AutomationId="mainPageButtonUsers"
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand"
                     x:Name="buttonUsers"
@@ -120,6 +126,7 @@
 
             <!--Report Button-->
             <Button Text="Exclamation-triangle" 
+                    AutomationId="mainPageButtonReport"
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand"
                     x:Name="buttonReport"
@@ -140,6 +147,7 @@
 
             <!--Log Out Button-->
             <Button Text="Power-off" 
+                    AutomationId="mainPageButtonLogOut"
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand"
                     x:Name="buttonLogOut"

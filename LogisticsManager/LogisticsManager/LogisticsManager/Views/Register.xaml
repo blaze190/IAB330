@@ -5,12 +5,12 @@
              Title="Register">
     <ContentPage.Content>
         <StackLayout x:Name="RegisterStack" Padding="40,5,40,0" VerticalOptions="StartAndExpand">
-            <Entry x:Name="entryCompanyName" Placeholder="Company Name"/>
-            <Entry x:Name="entryEmail" Placeholder="Email"/>
-            <Entry x:Name="entryUsername" Placeholder="Admin Username"/>
-            <Entry x:Name="entryPassword" Placeholder="Password"/>
-            <Entry x:Name="entryReEnterPassword" IsPassword="True" Placeholder="Re-Enter Password"/>
-            <Button x:Name="buttonSubmit" Text="Submit" BackgroundColor="#212121" TextColor="#ffffff" Clicked="buttonSubmitClicked"/>
+            <Entry AutomationId="registerEntryCompanyName" x:Name="entryCompanyName" Placeholder="Company Name"/>
+            <Entry AutomationId="registerEntryEmail" x:Name="entryEmail" Placeholder="Email"/>
+            <Entry AutomationId="registerEntryUsername" x:Name="entryUsername" Placeholder="Admin Username"/>
+            <Entry AutomationId="registerEntryPassword" x:Name="entryPassword" Placeholder="Password"/>
+            <Entry AutomationId="registerEntryReEnterPassword" x:Name="entryReEnterPassword" IsPassword="True" Placeholder="Re-Enter Password"/>
+            <Button AutomationId="registerButtonSubmit" x:Name="buttonSubmit" Text="Submit" BackgroundColor="#212121" TextColor="#ffffff" Clicked="buttonSubmitClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

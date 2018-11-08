@@ -37,7 +37,6 @@ namespace LogisticsManager.Views
 
             if (Valid())
             {
-                DisplayAlert("Success", "You have successfully created a company account", "OK");
                 Navigation.PushAsync(new Views.LogIn());
             }
             else {
@@ -79,7 +78,7 @@ namespace LogisticsManager.Views
 
                 return true;
             }
-            catch (Exception e) {
+            catch (Exception) {
                 return false;
             }
         }

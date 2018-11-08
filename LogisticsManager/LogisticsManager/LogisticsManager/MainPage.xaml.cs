@@ -20,13 +20,11 @@ namespace LogisticsManager
             clocksDBController = new ClocksDBController();
             clock = new Clock();
 
-            if (Constants.clock == null)
-            {
+            if (Constants.clock == null)           
                 labelClock.Text = "You are Clocked Out";
-            }
-            else {
+            else 
                 labelClock.Text = "You are Clocked In";
-            }
+            
 
             clearStack();
             hideButtons();
@@ -93,10 +91,16 @@ namespace LogisticsManager
 
         private void Logout_Button_Clicked(object sender, EventArgs e)
         {
-            Constants.user = null;
-            Constants.company = null;
-            Constants.clock = null;
-            Navigation.PushAsync(new Views.LogIn());
+            if (Constants.clock == null)
+            {
+                Constants.user = null;
+                Constants.company = null;
+                Constants.clock = null;
+                Navigation.PushAsync(new Views.LogIn());
+            }
+            else
+                DisplayAlert("Alert","You must clock out before you log off","OK");
+            
         }
 
         private void hideButtons() {

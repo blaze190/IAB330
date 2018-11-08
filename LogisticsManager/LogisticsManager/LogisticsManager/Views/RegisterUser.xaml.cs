@@ -104,7 +104,7 @@ namespace LogisticsManager.Views
                
                 return true;
             }
-            catch (Exception e) {
+            catch (Exception) {
                 return false;
             }
         }

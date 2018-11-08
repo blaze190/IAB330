@@ -29,24 +29,37 @@ namespace LogisticsManager.Views
 
         void buttonSubmitClicked(object sender, EventArgs e)
         {
-            lodgeReport();
+            if (lodgeReport()) {
+                DisplayAlert("Success", "Report sent to admin", "OK");
+                Navigation.PushAsync(new MainPage());
+            } else 
+                DisplayAlert("Alert", "You have incorrectly filled out a field", "OK");
+
+
         }
 
-        void lodgeReport()
+        bool lodgeReport()
         {
-            string pickerValue = pickerCategory.Items[pickerCategory.SelectedIndex];
+            try
+            {
 
-            LogisticsManager.Report report = new LogisticsManager.Report();
-            report.Type = pickerValue;
-            report.Desc = entryDescription.Text;
-            report.CompanyID = Constants.company.Id;
-            report.FromUserID = Constants.user.Id;
-            report.CreationDate = DateTime.Now;
+                string pickerValue = pickerCategory.Items[pickerCategory.SelectedIndex];
 
-            reportsDBController.SaveReport(report);
+                LogisticsManager.Report report = new LogisticsManager.Report();
+                report.Type = pickerValue;
+                report.Desc = entryDescription.Text;
+                report.CompanyID = Constants.company.Id;
+                report.FromUserID = Constants.user.Id;
+                report.CreationDate = DateTime.Now;
 
-            DisplayAlert("Success", "Report sent to admin", "OK");
-            Navigation.PushAsync(new MainPage());
+                reportsDBController.SaveReport(report);
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

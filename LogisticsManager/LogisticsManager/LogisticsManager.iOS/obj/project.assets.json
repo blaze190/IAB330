@@ -41,9 +41,6 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit3TestAdapter/3.11.0": {
-        "type": "package"
-      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -255,9 +252,6 @@
         "build": {
           "build/NUnit.props": {}
         }
-      },
-      "NUnit3TestAdapter/3.11.0": {
-        "type": "package"
       },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
@@ -471,9 +465,6 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit3TestAdapter/3.11.0": {
-        "type": "package"
-      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -685,9 +676,6 @@
         "build": {
           "build/NUnit.props": {}
         }
-      },
-      "NUnit3TestAdapter/3.11.0": {
-        "type": "package"
       },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
@@ -1033,30 +1021,11 @@
         "lib/netstandard1.4/nunit.framework.pdb",
         "lib/netstandard1.4/nunit.framework.xml",
         "lib/netstandard2.0/nunit.framework.dll",
+        "lib/netstandard2.0/nunit.framework.dll.mdb",
         "lib/netstandard2.0/nunit.framework.pdb",
         "lib/netstandard2.0/nunit.framework.xml",
         "nunit.3.11.0.nupkg.sha512",
         "nunit.nuspec"
-      ]
-    },
-    "NUnit3TestAdapter/3.11.0": {
-      "sha512": "Rrf6YJw1EAZKMwC1vNRHNBeWY+ziPOM6uh50HUaag8AjsVmc36XmdcmfdPsipPzWFsJhE9Js3FTJ93CMkoBpoA==",
-      "type": "package",
-      "path": "nunit3testadapter/3.11.0",
-      "files": [
-        ".signature.p7s",
-        "LICENSE.txt",
-        "build/net35/NUnit3.TestAdapter.dll",
-        "build/net35/NUnit3.TestAdapter.pdb",
-        "build/net35/NUnit3TestAdapter.props",
-        "build/net35/nunit.engine.api.dll",
-        "build/net35/nunit.engine.dll",
-        "build/netcoreapp1.0/NUnit3.TestAdapter.dll",
-        "build/netcoreapp1.0/NUnit3.TestAdapter.pdb",
-        "build/netcoreapp1.0/NUnit3TestAdapter.props",
-        "build/netcoreapp1.0/nunit.engine.netstandard.dll",
-        "nunit3testadapter.3.11.0.nupkg.sha512",
-        "nunit3testadapter.nuspec"
       ]
     },
     "sqlite-net-pcl/1.5.231": {
@@ -1309,7 +1278,6 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "NUnit >= 3.11.0",
-      "NUnit3TestAdapter >= 3.11.0",
       "Xamarin.Forms >= 3.1.0.697729",
       "sqlite-net-pcl >= 1.5.231"
     ]
@@ -1348,10 +1316,6 @@
       "xamarinios10": {
         "dependencies": {
           "NUnit": {
-            "target": "Package",
-            "version": "[3.11.0, )"
-          },
-          "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[3.11.0, )"
           },

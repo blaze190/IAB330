@@ -613,8 +613,4 @@ D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\Views\NewTask.xaml.g.cs
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.framework.dll
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.framework.pdb
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\NUnit3.TestAdapter.dll
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\NUnit3.TestAdapter.pdb
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.engine.dll
-D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\bin\x86\Debug\nunit.engine.api.dll
 D:\Emily\Documents\IAB330\LogisticsManager\LogisticsManager\LogisticsManager.UWP\obj\x86\Debug\LogisticsManager.UWP.csprojAssemblyReference.cache
