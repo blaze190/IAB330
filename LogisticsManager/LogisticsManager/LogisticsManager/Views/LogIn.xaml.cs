@@ -63,7 +63,7 @@ namespace LogisticsManager.Views
         bool Valid() {
 
             try {
-                User user = usersDBController.GetUser(entryUsername.Text).FirstOrDefault();
+                User user = usersDBController.GetUser(entryUsername.Text.ToLower()).FirstOrDefault();
 
                 //Get hashed password from database
                 string savedPasswordHash = user.Password;

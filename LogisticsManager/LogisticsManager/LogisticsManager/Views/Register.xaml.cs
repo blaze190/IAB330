@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -62,14 +63,33 @@ namespace LogisticsManager.Views
             {
                 //create a company and save to database
                 Company company = new Company();
-                company.Name = entryCompanyName.Text;
+
+                //validate company name
+                if (Regex.IsMatch(entryCompanyName.Text, @"[A-Za-z1-9 _]+")) //matches letters, numbers, spaces and underscores
+                    company.Name = entryCompanyName.Text;
+                else return false;
+
                 companiesDBController.SaveCompany(company);
 
                 //create a user
                 User user = new User();
-                user.Username = entryUsername.Text;
+
+                //validate username
+                if (Regex.IsMatch(entryUsername.Text.ToLower(), @"[A-Za-z1-9_]+")) //matches letters, numbers and underscores
+                    user.Username = entryUsername.Text.ToLower();
+                else return false;
+                
                 user.AccessLevel = 10;
                 user.CompanyID = company.Id;
+
+                //validate password
+                if (Regex.IsMatch(entryPassword.Text, @"[A-Za-z0-9_!@#$%^&*()]+")) //matches letters, numbers and symbols
+                    user.Password = entryPassword.Text;
+                else return false;
+
+                //check re-enter password matches password
+                if (entryReEnterPassword.Text != entryPassword.Text)
+                    return false;
 
                 //generate salt for password
                 byte[] salt;

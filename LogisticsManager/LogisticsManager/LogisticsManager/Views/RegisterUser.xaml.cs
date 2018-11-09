@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -59,7 +60,10 @@ namespace LogisticsManager.Views
                 User user = new User();
 
                 //Set Username
-                user.Username = entryUsername.Text;
+                //validate username
+                if (Regex.IsMatch(entryUsername.Text.ToLower(), @"[A-Za-z1-9_]+")) //matches letters, numbers and underscores
+                    user.Username = entryUsername.Text.ToLower();
+                else return false;
 
                 //Set Access Level
                 string pickerValue = pickerAccessLevel.Items[pickerAccessLevel.SelectedIndex];
@@ -90,6 +94,11 @@ namespace LogisticsManager.Views
                 user.CompanyID = Constants.company.Id;
 
                 //Set password
+
+                //validate password
+                if (Regex.IsMatch(entryPassword.Text, @"[A-Za-z0-9_!@#$%^&*()]+")) //matches letters, numbers and symbols
+                    user.Password = entryPassword.Text;
+                else return false;
 
                 //generate salt
                 byte[] salt;

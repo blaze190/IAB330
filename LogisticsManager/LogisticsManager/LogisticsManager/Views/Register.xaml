@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <StackLayout x:Name="RegisterStack" Padding="40,5,40,0" VerticalOptions="StartAndExpand">
             <Entry AutomationId="registerEntryCompanyName" x:Name="entryCompanyName" Placeholder="Company Name"/>
+            <Label Text="*email not required" FontSize="8"/>
             <Entry AutomationId="registerEntryEmail" x:Name="entryEmail" Placeholder="Email"/>
             <Entry AutomationId="registerEntryUsername" x:Name="entryUsername" Placeholder="Admin Username"/>
             <Entry AutomationId="registerEntryPassword" x:Name="entryPassword" Placeholder="Password"/>
