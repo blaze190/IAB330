@@ -1,0 +1,4 @@
+Xamarin.UITest v2.2.7
+sqlite-net-pcl v1.5.231
+NUnitTestAdapter v2.1.1
+Nunit v3.11.0
